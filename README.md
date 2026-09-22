@@ -229,12 +229,12 @@ Proiectul poate fi extins prin:
 
 ## Autor
 
-Capp Sara-Cristiana
-Conțolenco Bianca - Maria
-Dăscălescu Ondina Ștefania
-Khan-Hamida Mariyam
+* Capp Sara-Cristiana
+* Conțolenco Bianca - Maria
+* Dăscălescu Ondina Ștefania
+* Khan-Hamida Mariyam
 
 
 ## Licență
 
-N-avem așa ceva... :( 
+N-avem bani de așa ceva... :( 
