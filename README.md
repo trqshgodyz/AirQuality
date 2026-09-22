@@ -231,8 +231,8 @@ Proiectul poate fi extins prin:
 
 * Capp Sara-Cristiana
 * Conțolenco Bianca - Maria
-* Dăscălescu Ondina Ștefania
-* Khan-Hamida Mariyam
+* Dăscălescu Ondina-Ștefania
+* Khan Hamida-Mariyam
 
 
 ## Licență
