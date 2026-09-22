@@ -12,7 +12,7 @@ Analiza urmărește cinci orașe:
 
 Pentru fiecare oraș este analizată o zonă cu raza de **10 km** în jurul centrului său.
 
-# Obiective
+## Obiective
 
 Proiectul urmărește:
 
@@ -24,7 +24,7 @@ Proiectul urmărește:
 * calcularea schimbării procentuale dintre 2024 și 2025;
 * clasificarea orașelor în funcție de nivelul mediu al poluării.
 
-# Sursa datelor
+## Sursa datelor
 
 Datele provin din colecția:
 
@@ -40,7 +40,7 @@ Pentru delimitarea României este utilizată colecția:
 FAO/GAUL_SIMPLIFIED_500m/2015/level0
 ```
 
-# Tehnologii utilizate
+## Tehnologii utilizate
 
 * Python
 * Google Earth Engine Python API
@@ -49,7 +49,7 @@ FAO/GAUL_SIMPLIFIED_500m/2015/level0
 * matplotlib
 * Jupyter Notebook sau Google Colab
 
-# Instalare
+## Instalare
 
 Clonează repository-ul:
 
@@ -70,7 +70,7 @@ Alternativ, dacă repository-ul conține un fișier `requirements.txt`, poți ru
 pip install -r requirements.txt
 ```
 
-# Configurarea Google Earth Engine
+## Configurarea Google Earth Engine
 
 Pentru rularea proiectului este necesar:
 
@@ -85,25 +85,25 @@ ee.Authenticate()
 ee.Initialize(project='airquality-508516')
 ```
 
-Dacă se rulează proiectul din propriul cont, doar trebui înlocuit `airquality-508516` cu ID-ul proiectului propriu Google Earth Engine:
+Dacă rulezi proiectul din propriul cont, înlocuiește `airquality-508516` cu ID-ul proiectului tău Google Cloud:
 
 ```python
-ee.Initialize(project='ID-UL-PROIECTULUI')
+ee.Initialize(project='ID-UL-PROIECTULUI-TAU')
 ```
 
 La prima rulare, Earth Engine va deschide procesul de autentificare în browser.
 
-# Metodologie
+## Metodologie
 
-# 1. Selectarea zonei de studiu
+### 1. Selectarea zonei de studiu
 
 Granița României este extrasă din baza de date FAO GAUL.
 
-# 2. Definirea zonelor urbane
+### 2. Definirea zonelor urbane
 
 Pentru fiecare dintre cele cinci orașe este creat un buffer circular cu raza de 10 km.
 
-# 3. Filtrarea datelor satelitare
+### 3. Filtrarea datelor satelitare
 
 Sunt păstrați doar pixelii care îndeplinesc următoarele condiții:
 
@@ -122,7 +122,7 @@ Valorile sunt exprimate în:
 mol/m²
 ```
 
-# 4. Agregarea datelor
+### 4. Agregarea datelor
 
 Pentru fiecare lună din 2024 și 2025:
 
@@ -132,11 +132,11 @@ Pentru fiecare lună din 2024 și 2025:
 
 Lunile fără pixeli valizi sunt eliminate din analiză.
 
-# Rezultate generate
+## Rezultate generate
 
 Proiectul generează:
 
-# Hartă interactivă
+### Hartă interactivă
 
 Harta conține:
 
@@ -151,7 +151,7 @@ Harta conține:
 * nuanțele de albastru indică o scădere a NO₂;
 * nuanțele de roșu indică o creștere a NO₂.
 
-# Grafice
+### Grafice
 
 Sunt generate următoarele grafice:
 
@@ -159,7 +159,7 @@ Sunt generate următoarele grafice:
 2. Comparația dintre iarnă și vară.
 3. Comparația mediilor anuale din 2024 și 2025.
 
-# Tabele
+### Tabele
 
 Codul afișează:
 
@@ -170,7 +170,7 @@ Codul afișează:
 * media generală pentru întreaga perioadă;
 * mediile pentru fiecare lună calendaristică.
 
-# Rulare
+## Rulare
 
 Proiectul poate fi rulat într-un Jupyter Notebook sau în Google Colab.
 
@@ -182,7 +182,7 @@ Map
 
 Extragerea datelor din Google Earth Engine poate dura câteva minute, în funcție de conexiune și de timpul de procesare al serverelor.
 
-# Structura recomandată a repository-ului
+## Structura recomandată a repository-ului
 
 ```text
 air-quality-romania/
@@ -196,7 +196,7 @@ air-quality-romania/
     └── annual_comparison.png
 ```
 
-# Fișierul requirements.txt
+## Fișierul requirements.txt
 
 ```text
 earthengine-api
@@ -206,7 +206,7 @@ matplotlib
 jupyter
 ```
 
-# Limitări
+## Limitări
 
 * Sentinel-5P măsoară coloana troposferică de NO₂, nu concentrația directă la nivelul solului.
 * Norii pot reduce numărul observațiilor disponibile.
@@ -215,7 +215,7 @@ jupyter
 * Comparația sezonieră combină datele din ambii ani.
 * Valorile pentru iarnă includ lunile decembrie, ianuarie și februarie din fiecare an analizat.
 
-# Posibile îmbunătățiri
+## Posibile îmbunătățiri
 
 Proiectul poate fi extins prin:
 
@@ -227,15 +227,14 @@ Proiectul poate fi extins prin:
 * adăugarea unor indicatori meteorologici;
 * publicarea hărții sub forma unei aplicații web.
 
-# Autori:
+## Autor
 
 Capp Sara-Cristiana
-Conțolenco Bianca-Maria
-Dăscălescu Ondina-Ștefania
-Khan Hamida-Mariyam
+Conțolenco Bianca - Maria
+Dăscălescu Ondina Ștefania
+Khan-Hamida Mariyam
 
 
+## Licență
 
-# Licență
-
-N-avem așa ceva... :( Doar freestyle
+N-avem așa ceva... :( 
