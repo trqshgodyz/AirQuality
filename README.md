@@ -230,7 +230,7 @@ Proiectul poate fi extins prin:
 ## Autor
 
 * Capp Sara-Cristiana
-* Conțolenco Bianca - Maria
+* Conțolenco Bianca-Maria
 * Dăscălescu Ondina-Ștefania
 * Khan Hamida-Mariyam
 
